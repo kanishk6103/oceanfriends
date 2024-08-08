@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  transition: transform 0.5s, opacity 0.5s;
+  cursor: pointer;
+}
+
+.card.animate {
+  transform: scale(0.5) translateX(100px) translateY(-100px);
+  opacity: 0;
+}
